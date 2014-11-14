@@ -1,6 +1,5 @@
 body{
 	background-color: #fff;
-	
 }
 .navbar-inverse .navbar-inner {
 	background: #fff;
@@ -25,32 +24,40 @@ body{
 	box-shadow: none;
 	position: relative;
 }
-.hero-unit{
+.jumbotron{
 	background-image: radial-gradient(closest-side, transparent 98%, rgba(179,226,236,.5) 99%), 
 	radial-gradient(closest-side, transparent 98%, rgba(179,226,236,.5) 99%);
 	background-size: 80px 80px;
 	background-position: 0 0, 40px 40px;
+	text-align: center;
 }
-.hero-unit h1{
+.jumbotron h1{
 	color: #f26522;
+	font-weight: bold;
+	margin-bottom: 0;
 }
-.carousel{
-	margin: 80px 0 0;
-}
-.carousel-inner {
-	padding: 0 80px;
-	width: auto;
+.hero-unit .lead{
+	margin: 30px 0 0;
+	text-align: left;
 }
 .carousel-inner .item{
 	font-size: 1.8em;
 	line-height: 1.2em;
 	font-style: italic;
 	min-height: 100px;
+	text-align: center;
 }
-.carousel-inner .item:before,
-.carousel-inner .item:after{
-	content: '"';
-}	
+.list-inline li{
+	position: relative;
+}
+.list-inline li:after{
+	content: '\b7\a0';
+	font-size: 3em;
+	position: absolute;
+	bottom: 0px;
+	margin:0;
+	padding: 0;
+}
 .featurette{
 	padding: 20px 50px;
 }
@@ -59,12 +66,8 @@ body{
 	border-radius: 100%;
 }
 #about{
-}
-footer{
-	margin: 50px;
-}
-#services{
 	background-color: rgba(179,226,236,.3);
 }
-#contact{
+footer{
+	margin: 100px 0;
 }

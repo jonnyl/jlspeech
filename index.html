@@ -9,9 +9,8 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/jlspeech.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  	<link href="css/jlspeech.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,117 +19,86 @@
     <!-- Le fav and touch icons -->
   </head>
 
- <body data-spy="scroll" data-target=".navbar">
+ <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-      </div>
-    </div>
 
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit" id="home">
+      <div class="jumbotron">
         <h1>Jackie Levine</h1>
         <p>Speech-Language Pathologist</p>   
-		<div id="myCarousel" class="carousel slide">
-		  <!-- Carousel items -->
-		  <div class="carousel-inner">
-		    <div class="active item">Are my child’s speech and language skills on track?</div>
-		    <div class="item">Will my child outgrow these speech errors on his own?</div>
-		    <div class="item">Why doesn’t my child follow directions?</div>
-			<div class="item">Will my child outgrow his stutter? How can I help?</div>
-			<div class="item">Why won’t my child play with the other kids during play dates?</div>
-			<div class="item">My kid is highly verbal but when it comes to writing, all bets are off.  Why??</div>
-		  </div>
-		  <!-- Carousel nav -->
-		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-		</div>	
-		<p >You may identify with some of these questions, or perhaps you have questions of your own that pertain to your child’s language development, which you have not yet asked. As a New Jersey state licensed and ASHA certified speech language pathologist, I can assist you in finding the answers you seek, while guiding you on a path to understanding. I look forward to helping you as best I can. </p>
-		</div>
 
 
-              <div class="featurette" id="about">
-                <img class="featurette-image pull-left" src="img/headshot.jpg">
-                <h2 class="featurette-heading">About Jackie.</h2>
-                <p class="lead">I am a NJ (& NY) State licensed and certified speech-language pathologist new to the town of South Orange. I’ve spent the past decade practicing in NYC, providing the highest quality of speech and language therapy to children, young and old, with communication disorders via ongoing assessment, family training and development of ever-evolving treatment programs, carefully designed to address my clients’ individual needs and learning styles. In an effort to continue my life’s work more locally, I am offering in-home speech-language therapy programs to South Orange and it’s neighboring communities.</p>
-              </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+            <div class="active item">Will my child outgrow his speech errors on his own in time?</div>
+            <div class="item">Are my child’s speech and language skills on track?</div>
+            <div class="item">My baby is so frustrated. Is there anything I can do to help?</div>
+  </div>
+</div>
+
+        <p class="lead">You may identify with some of these questions, or perhaps you have questions of your own that you have yet to ask.   As a New Jersey state licensed and ASHA certified speech language pathologist, I would be happy to assist you in finding the answers you seek.</p>
+      </div>
 
 
+<div class="featurette">
+  <h2 class="featurette-heading">About <span class="muted">me:</span></h2>
+  <img class="featurette-image pull-right" src="img/headshot.jpg">
+  <p class="lead">
+  For the past decade, I have devoted myself to providing the highest quality speech and language services to children who present with a variety of communication disorders, including:</p>
 
+  <ul class="list-inline">
+    <li>Articulation and phonological disorders</li>
+    <li>Auditory processing disorders</li>
+    <li>Autistic spectrum disorders</li>
+    <li>Apraxia</li>
+    <li>Language processing disorders</li>
+    <li>Oral-motor weaknesses</li>
+    <li>Social-pragmatic disorders</li>
+    <li>Specific language impairment</li>
+    <li>Stuttering and related fluency disorders</li>
+    <li>Voice disorders</li>
+    <li>Word retrieval deficits</li>
+  </ul>
+</div>
 
-		      <!-- START THE FEATURETTES -->
-			      <div class="featurette" id="services">
-			        <h2 class="featurette-heading">Services<span class="muted"></span></h2>
+<div class="featurette" id="about">
+ <h2 class="featurette-heading">My mission <span class="muted">is simple:</span></h2>
+ <p class="lead">Via ongoing assessment, family/caregiver participation and ever-evolving, individualized therapy, I take great pride in helping my clients become empowered, informed and skillful communicators.</p>
+  <p class="lead">I have worked in educational, clinical, and home-based settings with children ranging in age from preschool through high school. Evaluations and therapy programs are available in home or office upon request.</p>
+</div>
 
-					<p class="lead">For the past decade, I have devoted myself to providing the highest
-					quality of speech and language services to children with communication
-					disorders via ongoing assessment, family involvement and ever-evolving
-					treatment programs, carefully catered to address my clients’ unique
-					needs and learning styles. As a speech language pathologist, I have
-					worked extensively with youngsters who present with various language
-					and articulation disorders, auditory processing disorders, receptive
-					and expressive language delays, writing disorders, and executive
-					function deficits. Collaboration with family members, teachers and
-					other interdisciplinary team members has aided me in fostering a safe,
-					supportive learning environment for each of my clients.</p>
+<div class="featurette" id="footer">
+  <h2 class="featurette-heading">Let's <span class="muted">talk:</span></h2>
+    <p class="lead">Whether your child would benefit from a naturalistic, play-based approach, or needs a more structured environment, you can rest assured that I will construct a nurturing, inspiring and enriching program to address your child’s individual needs.</p>
+  <p class="lead">I look forward to helping you as best I can.</p>
+  <p class="lead"><a href="mailto:jackie@jlspeech.com">jackie@jlspeech.com</a></p>
+  <p class="lead"><a href="tel:917-690-2214">917-690-2214</a></p>
 
-					<p class="lead">Whether your child would benefit from a naturalistic, play-based
-					approach, or needs a more structured environment, you can rest assured
-					that I will create a nurturing, motivating and enriching program to
-					address your child’s individual needs.</p>
-
-					<p class="lead">I have worked in educational, clinical, and home-based settings with
-					children ranging in age from preschool through high school. Evaluations
-					and therapy programs are available in home or office upon request.</p>
-
-					<p class="lead">Diagnostic and therapy services are available both individually and
-					[when appropriate] in small groups to children and adolescents with a
-					range of communication and learning difficulties.</p>		
-		      </div>
-
-
-		
-				
-              <!-- FOOTER -->
-              <footer>
-                <h2 class="featurette-heading">Contact Me.<span class="muted"> Let's talk.</span></h2>
-                <p class="lead"><a href="mailto:jackie@jlspeech.com">jackie@jlspeech.com</a></p>
-                <p class="lead"><a href="tel:917-690-2214">917-690-2214</a></p>
-                
-                <br><br>
-
-                <p class="pull-right"><a href="#">Back to top</a></p>
-                <p>© 2013 jackie levine, llc.</p>
-              </footer>
-	
-		      <!-- /END THE FEATURETTES -->
-
-
-
-
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>© 2013 jackie levine, llc.</p>
+  </footer>
+</div>
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 	<script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-	<script src="js/bootstrap-scrollspy.js"></script>
-	<script>$('#navbar').scrollspy();</script>
-    <script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script>
+  $('#navbar').scrollspy();
+  $('#myCarousel').carousel();
+  </script>
+
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -140,6 +108,5 @@
   ga('send', 'pageview');
 
 </script>
-
   </body>
 </html>
