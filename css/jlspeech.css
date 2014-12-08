@@ -36,27 +36,21 @@ body{
 	font-weight: bold;
 	margin-bottom: 0;
 }
-.hero-unit .lead{
-	margin: 30px 0 0;
+.jumbotron .lead{
+	margin: 30px 20px 0;
 	text-align: left;
+}
+.carousel{
+	margin: 40px 0;
 }
 .carousel-inner .item{
 	font-size: 1.8em;
 	line-height: 1.2em;
 	font-style: italic;
-	min-height: 100px;
-	text-align: center;
+    min-height: 90px;
 }
-.list-inline li{
-	position: relative;
-}
-.list-inline li:after{
-	content: '\b7\a0';
-	font-size: 3em;
-	position: absolute;
-	bottom: 0px;
-	margin:0;
-	padding: 0;
+.list-inline{
+	list-style: disc;
 }
 .featurette{
 	padding: 20px 50px;
@@ -64,6 +58,9 @@ body{
 .featurette-image{
 	margin: 40px;
 	border-radius: 100%;
+}
+.muted {
+    color: #999999;
 }
 #about{
 	background-color: rgba(179,226,236,.3);
