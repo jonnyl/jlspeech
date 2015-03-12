@@ -1,18 +1,51 @@
 body{
 	background-color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
 }
-.navbar-inverse .navbar-inner {
-	background: #fff;
-	opacity: .9;
+.navbar-inverse{
+	background: transparent;
 	border: 0;
+	width:100%;
+	transition: .5s;
+	padding: 20px 0;
+	z-index: 1;
+	position: absolute;
+
+}
+.navbar-inverse.affix{
+	background: rgba(255,255,255,.9);
 	box-shadow: 0 2px 5px rgba(0,0,0,.5);
-	
+	padding: 10px 0;
+	font-size: 1.2em;
+	position: fixed;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand:hover{
+	display: none;
+	width: 300px;
+	color: #f26522;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 0 20px;
+	padding: 0;
+}
+.navbar-inverse .navbar-brand .tagline{
+	font-weight: normal;
+	font-size: .8em;
+	color: #666;
+}
+.navbar-inverse.affix .navbar-brand{
+	display: block;
+}
+.navbar-inverse .nav{
+	float: right;
 }
 .navbar-inverse .nav > li > a,
 .navbar-inverse .nav > li > a:hover{
 	color: #000;
 	background-color: transparent;	
 	text-shadow: none;
+	font-size: 1.4em;
 }
 .navbar-inverse .nav > li > a:hover{
 	color: #f26522;
@@ -34,7 +67,7 @@ body{
 .jumbotron h1{
 	color: #f26522;
 	font-weight: bold;
-	margin-bottom: 0;
+	margin-top: 70px;
 }
 .jumbotron .lead{
 	margin: 30px 20px 0;
@@ -62,9 +95,10 @@ body{
 .muted {
     color: #999999;
 }
-#about{
+#mission,
+#contact{
 	background-color: rgba(179,226,236,.3);
 }
 footer{
-	margin: 100px 0;
+	padding: 50px 50px 100px;
 }

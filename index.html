@@ -1,16 +1,14 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="jlspeechApp">
   <head>
     <meta charset="utf-8">
     <title>Jackie Levine, Speech-Language Pathologist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <!-- Le styles -->
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
- 
     <link href="css/jlspeech.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -20,15 +18,29 @@
     <!-- Le fav and touch icons -->
   </head>
 
- <body>
 
+<body data-spy="scroll" data-target=".navbar-inverse" ng-controller="TestimonialCtrl">
+
+<div class="navbar-inverse" data-spy="affix" data-offset-top="10" data-offset-bottom="200">
+   <a class="navbar-brand" href="#">
+          Jackie Levine
+          <p class="tagline">Speech-Language Pathologist</p>   
+   </a>
+  <ul class="nav navbar-nav" role="tablist">
+    <li class=""><a href="#about">About</a></li>
+    <li class=""><a href="#mission">My Mission</a></li>
+    <li class=""><a href="#testimonials">Testimonials</a></li>
+    <li class=""><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+</body>
 
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Jackie Levine</h1>
-        <p>Speech-Language Pathologist</p>   
-
-
+      <div class="jumbotron" id="top">
+        
+          <h1>Jackie Levine</h1>
+          <p>Speech-Language Pathologist</p>   
+        
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
   <!-- Indicators 
   <ol class="carousel-indicators">
@@ -51,7 +63,7 @@
       </div>
 
 
-<div class="featurette">
+<div class="featurette" id="about">
   <h2 class="featurette-heading">About <span class="muted">me</span></h2>
   <img class="featurette-image pull-right" src="img/headshot.jpg">
   <p class="lead">
@@ -69,13 +81,23 @@
   </ul>
 </div>
 
-<div class="featurette" id="about">
+<div class="featurette" id="mission">
  <h2 class="featurette-heading">My mission <span class="muted">is simple</span></h2>
  <p class="lead">Via ongoing assessment, family/caregiver partnership, and ever-evolving, individualized therapy planning, I strive to help my clients become empowered, informed and skillful communicators. I take great pride in my ability to engage children in an enjoyable learning process, teach effective strategies which lead to communicative success, and have fun while doing so! </p>
   <p class="lead">I have worked in educational, clinical, and home-based settings with children ranging in age from toddler through teen. Evaluations and therapy programs are available in home or office, upon request.</p>
 </div>
 
-<div class="featurette" id="footer">
+<div class="featurette" id="testimonials">
+ <h2 class="featurette-heading">Testimonials</h2>
+  <div ng-repeat="testimonial in testimonials">
+      <blockquote>{{testimonial.snippet}}</blockquote>
+      <span>{{testimonial.name}}</span>
+  </div>
+ <p class="lead">Via ongoing assessment, family/caregiver partnership, and ever-evolving, individualized therapy planning, I strive to help my clients become empowered, informed and skillful communicators. I take great pride in my ability to engage children in an enjoyable learning process, teach effective strategies which lead to communicative success, and have fun while doing so! </p>
+  <p class="lead">I have worked in educational, clinical, and home-based settings with children ranging in age from toddler through teen. Evaluations and therapy programs are available in home or office, upon request.</p>
+</div>
+
+<div class="featurette" id="contact">
   <h2 class="featurette-heading">Let's <span class="muted">talk</span></h2>
     <p class="lead">Whether your child would benefit from a naturalistic, play-based approach, or a more structured environment, you can rest assured that I will construct a nurturing, inspiring and enriching program to address your child’s individual learning needs.</p>
   <p class="lead">I look forward to hearing from you.</p>
@@ -85,10 +107,10 @@
     <div><a href="mailto:jackie@jlspeech.com">jackie@jlspeech.com</a></div>
     <div><a href="tel:917-690-2214">917-690-2214</a></div>
   </p>
+</div>
   <footer>
     <p>© 2014 jrl speech and language, llc.</p>
   </footer>
-</div>
 
     <!-- Le javascript
     ================================================== -->
@@ -96,6 +118,7 @@
   <script src="http://code.jquery.com/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
   <script>
   $('#navbar').scrollspy();
   $('#myCarousel').carousel();

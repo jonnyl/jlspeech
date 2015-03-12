@@ -2,10 +2,10 @@
 
 /* Controllers */
  
-var phonecatApp = angular.module('phonecatApp', []);
+var jlspeechApp = angular.module('jlspeechApp', []);
 
-phonecatApp.controller('PhoneListCtrl', function($scope) {
-  $scope.phones = [
+jlspeechApp.controller('TestimonialCtrl', function($scope) {
+  $scope.testimonials = [
     {'name': 'Client X',
      'snippet': 'Jackie is awesome and here is why.'},
     {'name': 'Client Y',
