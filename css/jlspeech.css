@@ -1,8 +1,8 @@
 body{
 	background-color: #fff;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
-.navbar-inverse{
+.navbar{
 	background: transparent;
 	border: 0;
 	width:100%;
@@ -12,66 +12,83 @@ body{
 	position: absolute;
 
 }
-.navbar-inverse.affix{
+.navbar.affix{
 	background: rgba(255,255,255,.9);
 	box-shadow: 0 2px 5px rgba(0,0,0,.5);
 	padding: 10px 0;
 	font-size: 1.2em;
 	position: fixed;
 }
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-brand:hover{
+.navbar .navbar-brand{
 	display: none;
-	width: 300px;
+	padding: 0;
+}
+.navbar .navbar-brand h1{
+	width: 200px;
 	color: #f26522;
 	font-weight: bold;
 	font-size: 1.2em;
-	margin: 0 20px;
+	margin: 5px 15px 0;
 	padding: 0;
+	font-family: 'Oswald', sans-serif;
 }
-.navbar-inverse .navbar-brand .tagline{
-	font-weight: normal;
+.navbar .navbar-brand .tagline{
+	font-weight: bold;
 	font-size: .8em;
 	color: #666;
+	margin: 0 15px;
+	font-family: inherit;
 }
-.navbar-inverse.affix .navbar-brand{
+.navbar.affix .navbar-brand{
 	display: block;
 }
-.navbar-inverse .nav{
+.navbar .nav{
 	float: right;
 }
-.navbar-inverse .nav > li > a,
-.navbar-inverse .nav > li > a:hover{
+.navbar-toggle .icon-bar{
+	background-color: #666;
+}
+.navbar .nav > li > a,
+.navbar .nav > li > a:hover{
 	color: #000;
 	background-color: transparent;	
 	text-shadow: none;
 	font-size: 1.4em;
 }
-.navbar-inverse .nav > li > a:hover{
+.navbar .nav > li > a:hover{
 	color: #f26522;
 }
-.navbar-inverse .nav > .active > a,
-.navbar-inverse .nav > .active > a:hover{
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover{
 	color: #f26522;
 	background-color: transparent;	
 	box-shadow: none;
 	position: relative;
+}
+.centered{
+	text-align: center;	
 }
 .jumbotron{
 	background-image: radial-gradient(closest-side, transparent 98%, rgba(179,226,236,.5) 99%), 
 	radial-gradient(closest-side, transparent 98%, rgba(179,226,236,.5) 99%);
 	background-size: 80px 80px;
 	background-position: 0 0, 40px 40px;
-	text-align: center;
 }
 .jumbotron h1{
+	font-family: 'Oswald', sans-serif;
 	color: #f26522;
 	font-weight: bold;
 	margin-top: 70px;
 }
 .jumbotron .lead{
-	margin: 30px 20px 0;
+	margin: 0 20px;
 	text-align: left;
+}
+.jumbotron .featurette{
+	padding: 0 50px;
+}
+.jumbotron .carousel{
+	margin: 0;
 }
 .carousel{
 	margin: 40px 0;
@@ -81,12 +98,53 @@ body{
 	line-height: 1.2em;
 	font-style: italic;
     min-height: 90px;
+    font-weight: bold;
+}
+.carousel.jumbotron .item::before,
+.carousel.jumbotron .item::after{
+	content: '"';
+}
+.carousel.testimonials .carousel-inner {
+	padding: 0 80px 60px;
+}
+.carousel.testimonials .carousel-inner::before,
+.carousel.testimonials .carousel-inner::after{
+	position: absolute;
+	content: '"';
+	font-size: 80px;
+	font-family: 'Coustard', serif;
+	color: #f26522;
+}
+.carousel.testimonials .carousel-inner::before{
+	top: -50px;
+	left: 0;
+	transform: rotate(180deg);
+}
+.carousel.testimonials .carousel-inner::after{
+	bottom: 10px;
+	right: 0;	
+}
+.carousel-control.left,
+.carousel-control.right{
+	left: -60px;
+	color: #999;
+	text-shadow: none;
+	background-image: none;
+}
+.carousel-control.right{
+  right: -60px;
+  left: auto;
 }
 .list-inline{
 	list-style: disc;
 }
 .featurette{
-	padding: 20px 50px;
+	margin: 0 auto;
+	padding: 70px 50px;
+}
+.featurette-heading{
+	margin-bottom: 30px;
+	font-weight: bold;
 }
 .featurette-image{
 	margin: 40px;

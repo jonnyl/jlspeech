@@ -4,13 +4,15 @@
  
 var jlspeechApp = angular.module('jlspeechApp', []);
 
-jlspeechApp.controller('TestimonialCtrl', function($scope) {
-  $scope.testimonials = [
-    {'name': 'Client X',
-     'snippet': 'Jackie is awesome and here is why.'},
-    {'name': 'Client Y',
-     'snippet': 'Jackie is awesome and here is why and this is how.'},
-    {'name': 'Client Z',
-     'snippet': 'Jackie is awesome and here is why and this is how and this is when.'},
+jlspeechApp.controller('JlSpeechCtrl', function($scope) {
+
+  $scope.questions = [
+    {'snippet': 'Will my child\'s speech correct itself over time?'},
+    {'snippet': 'Are my child\’s speech and language skills on track?'},
+    {'snippet': 'How can I help my child communicate his wants and needs?'},
+    {'snippet': 'Are my child’s speech patterns normal?'},
+    {'snippet': 'My toddler is so frustrated! Is there anything I can do to help?'},
   ];
+
+
 });
