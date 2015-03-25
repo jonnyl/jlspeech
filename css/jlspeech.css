@@ -81,14 +81,12 @@ body{
 	margin-top: 70px;
 }
 .jumbotron .lead{
-	margin: 0 20px;
+	margin: 0;
 	text-align: left;
-}
-.jumbotron .featurette{
-	padding: 0 50px;
 }
 .jumbotron .carousel{
 	margin: 0;
+	padding: 50px 0 0;
 }
 .carousel{
 	margin: 40px 0;
@@ -105,7 +103,12 @@ body{
 	content: '"';
 }
 .carousel.testimonials .carousel-inner {
-	padding: 0 80px 60px;
+	padding: 0;
+}
+@media (min-width: 768px){
+	.carousel.testimonials .carousel-inner {
+	  padding: 0 80px 60px;
+	}
 }
 .carousel.testimonials .carousel-inner::before,
 .carousel.testimonials .carousel-inner::after{
@@ -135,12 +138,20 @@ body{
   right: -60px;
   left: auto;
 }
+.carousel-indicators li{
+	background-color: transparent;	
+	border-color: #999;
+}
+.carousel-indicators .active{
+	background-color: #999;
+}
+
 .list-inline{
 	list-style: disc;
 }
 .featurette{
 	margin: 0 auto;
-	padding: 70px 50px;
+	padding: 70px 50px 30px;
 }
 .featurette-heading{
 	margin-bottom: 30px;
