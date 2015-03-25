@@ -19,6 +19,10 @@ body{
 	font-size: 1.2em;
 	position: fixed;
 }
+.navbar-collapse{
+	background: rgba(255,255,255,.9);
+	box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
 .navbar .navbar-brand{
 	display: none;
 	padding: 0;
@@ -81,48 +85,69 @@ body{
 	margin-top: 70px;
 }
 .jumbotron .lead{
-	margin: 0 20px;
+	margin: 0;
 	text-align: left;
-}
-.jumbotron .featurette{
-	padding: 0 50px;
 }
 .jumbotron .carousel{
 	margin: 0;
+	padding: 50px 0 0;
 }
 .carousel{
 	margin: 40px 0;
 }
 .carousel-inner .item{
-	font-size: 1.8em;
 	line-height: 1.2em;
 	font-style: italic;
     min-height: 90px;
     font-weight: bold;
 }
-.carousel.jumbotron .item::before,
-.carousel.jumbotron .item::after{
+.carousel.questions .item{
+	font-size: 1.8em;
+}
+.carousel.questions .item::before,
+.carousel.questions .item::after{
 	content: '"';
 }
+.carousel.testimonials .item p{
+	margin-top: 10px;
+}
 .carousel.testimonials .carousel-inner {
-	padding: 0 80px 60px;
+	padding: 0 0 20px;
+	overflow: visible;
 }
 .carousel.testimonials .carousel-inner::before,
 .carousel.testimonials .carousel-inner::after{
 	position: absolute;
 	content: '"';
-	font-size: 80px;
+	font-size: 60px;
 	font-family: 'Coustard', serif;
 	color: #f26522;
 }
 .carousel.testimonials .carousel-inner::before{
 	top: -50px;
-	left: 0;
+	left: -50px;
 	transform: rotate(180deg);
 }
 .carousel.testimonials .carousel-inner::after{
 	bottom: 10px;
-	right: 0;	
+	right: -50px;	
+}
+@media (min-width: 768px){
+	.carousel-inner .item{
+		font-size: 1.8em;
+	}
+	.carousel.testimonials .carousel-inner {
+	  padding: 0 80px 60px;
+	  overflow: hidden;
+	}
+	.carousel.testimonials .carousel-inner::before{
+		font-size: 80px;
+		left: 0;
+	}
+	.carousel.testimonials .carousel-inner::after{
+		font-size: 80px;
+		right: 0;
+	}
 }
 .carousel-control.left,
 .carousel-control.right{
@@ -135,12 +160,23 @@ body{
   right: -60px;
   left: auto;
 }
+.carousel-indicators{
+	bottom: auto;
+}
+.carousel-indicators li{
+	background-color: transparent;	
+	border-color: #999;
+}
+.carousel-indicators .active{
+	background-color: #999;
+}
+
 .list-inline{
 	list-style: disc;
 }
 .featurette{
 	margin: 0 auto;
-	padding: 70px 50px;
+	padding: 70px 50px 30px;
 }
 .featurette-heading{
 	margin-bottom: 30px;
