@@ -1,0 +1,70 @@
+body{
+	background-color: #fff;
+}
+.navbar-inverse .navbar-inner {
+	background: #fff;
+	opacity: .9;
+	border: 0;
+	box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	
+}
+.navbar-inverse .nav > li > a,
+.navbar-inverse .nav > li > a:hover{
+	color: #000;
+	background-color: transparent;	
+	text-shadow: none;
+}
+.navbar-inverse .nav > li > a:hover{
+	color: #f26522;
+}
+.navbar-inverse .nav > .active > a,
+.navbar-inverse .nav > .active > a:hover{
+	color: #f26522;
+	background-color: transparent;	
+	box-shadow: none;
+	position: relative;
+}
+.jumbotron{
+	background-image: radial-gradient(closest-side, transparent 98%, rgba(179,226,236,.5) 99%), 
+	radial-gradient(closest-side, transparent 98%, rgba(179,226,236,.5) 99%);
+	background-size: 80px 80px;
+	background-position: 0 0, 40px 40px;
+	text-align: center;
+}
+.jumbotron h1{
+	color: #f26522;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.jumbotron .lead{
+	margin: 30px 20px 0;
+	text-align: left;
+}
+.carousel{
+	margin: 40px 0;
+}
+.carousel-inner .item{
+	font-size: 1.8em;
+	line-height: 1.2em;
+	font-style: italic;
+    min-height: 90px;
+}
+.list-inline{
+	list-style: disc;
+}
+.featurette{
+	padding: 20px 50px;
+}
+.featurette-image{
+	margin: 40px;
+	border-radius: 100%;
+}
+.muted {
+    color: #999999;
+}
+#about{
+	background-color: rgba(179,226,236,.3);
+}
+footer{
+	margin: 100px 0;
+}
