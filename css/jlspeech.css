@@ -193,6 +193,9 @@ body{
 	margin: 40px;
 	border-radius: 100%;
 }
+.list{
+	margin-bottom: 20px;
+}
 .muted {
     color: #999999;
 }
